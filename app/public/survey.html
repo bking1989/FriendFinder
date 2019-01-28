@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>FriendFinder | New Member Survey</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="assets/script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="jumbotron m-3 bg-primary">
+            <h1 class="display-4 font-weight-bold text-white">FriendFinder</h1>
+            <p class="lead text-white">Find yourself a new friend today!</p>
+        </div>
+        <div class="card m-3">
+            <div class="card-header">New Member Survey</div>
+            <div class="card-body">
+                <h3>Instructions</h3>
+                <p>In order to find yourself a new friend, we've created a carefully-made, highly-advanced quiz to help us get to know you better and, in turn, find the best possible friend match for you. Please fill out the form below and answer the quiz questions, and we'll provide you with your brand new friend!</p>
+                <p>Please note that the quiz questions will provide you with a statement, then the option to rate it for accuracy on a scale of 1 to 5.</p>
+                <br>
+                <hr class="m-2">
+                <br>
+                <div class="form-group">
+                    <label for="memberName">Name</label>
+                    <input type="text" class="form-control" id="memberName" placeholder="John Doe">
+                    <br>
+                    <label for="memberAge">Age</label>
+                    <input type="number" class="form-control" id="memberAge" placeholder="18">
+                    <br>
+                    <label for="memberLocation">Location</label>
+                    <input type="text" class="form-control" id="memberLocation" placeholder="Los Angeles, CA">
+                    <br>
+                    <br>
+                    <label for="memberQuestion1">You consider yourself adventurous and like to spend your time being outdoors or traveling, rather than inside and doing a quiet activity.</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer1" value="1">
+                        <label class="form-check-label" for="question1answer1">1 (Very Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer2" value="2">
+                        <label class="form-check-label" for="question1answer2">2 (Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer3" value="3">
+                        <label class="form-check-label" for="question1answer3">3 (Neutral)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer4" value="4">
+                        <label class="form-check-label" for="question1answer4">4 (True)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer5" value="5">
+                        <label class="form-check-label" for="question1answer5">5 (Very True)</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="memberQuestion2">When you get the chance to eat out, you tend to 'splurge' and spoil yourself with heartier and more unhealthy meals rather than a salad or something light.</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer1" value="1">
+                        <label class="form-check-label" for="question2answer1">1 (Very Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer2" value="2">
+                        <label class="form-check-label" for="question2answer2">2 (Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer3" value="3">
+                        <label class="form-check-label" for="question2answer3">3 (Neutral)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer4" value="4">
+                        <label class="form-check-label" for="question2answer4">4 (True)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer5" value="5">
+                        <label class="form-check-label" for="question2answer5">5 (Very True)</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="memberQuestion3">When it comes time for the holidays or vacation, and you get time off from school or work, you prefer to spend that time with family rather than friends.</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer1" value="1">
+                        <label class="form-check-label" for="question3answer1">1 (Very Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer2" value="2">
+                        <label class="form-check-label" for="question3answer2">2 (Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer3" value="3">
+                        <label class="form-check-label" for="question3answer3">3 (Neutral)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer4" value="4">
+                        <label class="form-check-label" for="question3answer4">4 (True)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer5" value="5">
+                        <label class="form-check-label" for="question3answer5">5 (Very True)</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="memberQuestion4">You find it easy to get immersed and enthralled in a fictional story, like in a movie or book.</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer1" value="1">
+                        <label class="form-check-label" for="question4answer1">1 (Very Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer2" value="2">
+                        <label class="form-check-label" for="question4answer2">2 (Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer3" value="3">
+                        <label class="form-check-label" for="question4answer3">3 (Neutral)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer4" value="4">
+                        <label class="form-check-label" for="question4answer4">4 (True)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer5" value="5">
+                        <label class="form-check-label" for="question4answer5">5 (Very True)</label>
+                    </div>
+                    <br>
+                    <br>
+                    <label for="memberQuestion5">You consider yourself a competitive person, by nature, and enjoy activities that pit you against your friends and family like sports and board games.</label>
+                    <br>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer1" value="1">
+                        <label class="form-check-label" for="question5answer1">1 (Very Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer2" value="2">
+                        <label class="form-check-label" for="question5answer2">2 (Wrong)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer3" value="3">
+                        <label class="form-check-label" for="question5answer3">3 (Neutral)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer4" value="4">
+                        <label class="form-check-label" for="question5answer4">4 (True)</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer5" value="5">
+                        <label class="form-check-label" for="question5answer5">5 (Very True)</label>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
