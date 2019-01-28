@@ -30,7 +30,8 @@ surveyComp = (survey, server) => {
     // Define our index array
     var indexArr = [];
 
-    // The function for comparing two arrays
+    // A function that compares the rest to all the sets on the server
+    // The difference total is submitted to the index array
     compare = (arr1, arr2) => {
         var total = 0;
 
@@ -41,7 +42,7 @@ surveyComp = (survey, server) => {
         indexArr.push(total);
     };
 
-    // Run the test against every server set and store the total differences in an array
+    // Run the test against every set on the server, and store all the difference totals in the index array
     server.forEach((element) => {
         compare(survey.answers, element.answers);
     });
