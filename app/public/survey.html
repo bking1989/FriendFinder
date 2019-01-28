@@ -8,7 +8,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="assets/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <script src="assets/script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </head>
@@ -40,129 +40,133 @@
                     <br>
                     <label for="memberQuestion1">You consider yourself adventurous and like to spend your time being outdoors or traveling, rather than inside and doing a quiet activity.</label>
                     <br>
-                    <div class="form-check form-check-inline">
+                    <div id="answers1" class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer1" value="1">
-                        <label class="form-check-label" for="question1answer1">1 (Very Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question1answer1">1 (Very Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer2" value="2">
-                        <label class="form-check-label" for="question1answer2">2 (Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question1answer2">2 (Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer3" value="3">
-                        <label class="form-check-label" for="question1answer3">3 (Neutral)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question1answer3">3 (Neutral)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer4" value="4">
-                        <label class="form-check-label" for="question1answer4">4 (True)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question1answer4">4 (True)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion1" id="question1answer5" value="5">
-                        <label class="form-check-label" for="question1answer5">5 (Very True)</label>
+                        <label class="form-check-label mr-3" for="question1answer5">5 (Very True)</label>
                     </div>
                     <br>
                     <br>
                     <label for="memberQuestion2">When you get the chance to eat out, you tend to 'splurge' and spoil yourself with heartier and more unhealthy meals rather than a salad or something light.</label>
                     <br>
-                    <div class="form-check form-check-inline">
+                    <div id="answers2" class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer1" value="1">
-                        <label class="form-check-label" for="question2answer1">1 (Very Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question2answer1">1 (Very Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer2" value="2">
-                        <label class="form-check-label" for="question2answer2">2 (Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question2answer2">2 (Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer3" value="3">
-                        <label class="form-check-label" for="question2answer3">3 (Neutral)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question2answer3">3 (Neutral)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer4" value="4">
-                        <label class="form-check-label" for="question2answer4">4 (True)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question2answer4">4 (True)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion2" id="question2answer5" value="5">
-                        <label class="form-check-label" for="question2answer5">5 (Very True)</label>
+                        <label class="form-check-label mr-3" for="question2answer5">5 (Very True)</label>
                     </div>
                     <br>
                     <br>
                     <label for="memberQuestion3">When it comes time for the holidays or vacation, and you get time off from school or work, you prefer to spend that time with family rather than friends.</label>
                     <br>
-                    <div class="form-check form-check-inline">
+                    <div id="answers3" class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer1" value="1">
-                        <label class="form-check-label" for="question3answer1">1 (Very Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question3answer1">1 (Very Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer2" value="2">
-                        <label class="form-check-label" for="question3answer2">2 (Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question3answer2">2 (Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer3" value="3">
-                        <label class="form-check-label" for="question3answer3">3 (Neutral)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question3answer3">3 (Neutral)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer4" value="4">
-                        <label class="form-check-label" for="question3answer4">4 (True)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question3answer4">4 (True)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion3" id="question3answer5" value="5">
-                        <label class="form-check-label" for="question3answer5">5 (Very True)</label>
+                        <label class="form-check-label mr-3" for="question3answer5">5 (Very True)</label>
                     </div>
                     <br>
                     <br>
                     <label for="memberQuestion4">You find it easy to get immersed and enthralled in a fictional story, like in a movie or book.</label>
                     <br>
-                    <div class="form-check form-check-inline">
+                    <div id="answers4" class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer1" value="1">
-                        <label class="form-check-label" for="question4answer1">1 (Very Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question4answer1">1 (Very Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer2" value="2">
-                        <label class="form-check-label" for="question4answer2">2 (Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question4answer2">2 (Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer3" value="3">
-                        <label class="form-check-label" for="question4answer3">3 (Neutral)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question4answer3">3 (Neutral)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer4" value="4">
-                        <label class="form-check-label" for="question4answer4">4 (True)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question4answer4">4 (True)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion4" id="question4answer5" value="5">
-                        <label class="form-check-label" for="question4answer5">5 (Very True)</label>
+                        <label class="form-check-label mr-3" for="question4answer5">5 (Very True)</label>
                     </div>
                     <br>
                     <br>
                     <label for="memberQuestion5">You consider yourself a competitive person, by nature, and enjoy activities that pit you against your friends and family like sports and board games.</label>
                     <br>
-                    <div class="form-check form-check-inline">
+                    <div id="answers5" class="form-check form-check-inline">
                         <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer1" value="1">
-                        <label class="form-check-label" for="question5answer1">1 (Very Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question5answer1">1 (Very Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer2" value="2">
-                        <label class="form-check-label" for="question5answer2">2 (Wrong)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question5answer2">2 (Wrong)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer3" value="3">
-                        <label class="form-check-label" for="question5answer3">3 (Neutral)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question5answer3">3 (Neutral)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer4" value="4">
-                        <label class="form-check-label" for="question5answer4">4 (True)</label>
-                    </div>
-                    <div class="form-check form-check-inline">
+                        <label class="form-check-label mr-3" for="question5answer4">4 (True)</label>
                         <input class="form-check-input" type="radio" name="memberQuestion5" id="question5answer5" value="5">
-                        <label class="form-check-label" for="question5answer5">5 (Very True)</label>
+                        <label class="form-check-label mr-3" for="question5answer5">5 (Very True)</label>
                     </div>
                     <br>
                     <br>
                     <br>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary" id="survey-btn">Submit</button>
                 </div>
             </div>
         </div>
     </div>
 </body>
 </html>
+
+<!-- JavaScript code for the submit button -->
+<script type="text/javascript">
+$("#survey-btn").on("click", function(e) {
+        e.preventDefault();
+
+        var surveyAnswers = {
+            memberName: $("#memberName").val().trim(),
+            memberAge: parseInt($("#memberAge").val()),
+            memberLocation: $("#memberLocation").val().trim()
+        };
+
+        var quizAnswers = [];
+
+        var question1 = parseInt($("#answers1 input:radio:checked").attr("value"));
+        var question2 = parseInt($("#answers2 input:radio:checked").attr("value"));
+        var question3 = parseInt($("#answers3 input:radio:checked").attr("value"));
+        var question4 = parseInt($("#answers4 input:radio:checked").attr("value"));
+        var question5 = parseInt($("#answers5 input:radio:checked").attr("value"));
+
+        quizAnswers.push(question1);
+        quizAnswers.push(question2);
+        quizAnswers.push(question3);
+        quizAnswers.push(question4);
+        quizAnswers.push(question5);
+
+        surveyAnswers.memberQuiz = quizAnswers;
+
+        $.post("/api/friends", surveyAnswers, (data) => {
+            if (data) {
+                alert("Congratulations! You've been added into our system!");
+            };
+
+            $("#memberName").val("");
+            $("#memberAge").val("");
+            $("#memberLocation").val("");
+            $("#answers1 input:radio:checked").prop('checked', false);
+            $("#answers2 input:radio:checked").prop('checked', false);
+            $("#answers3 input:radio:checked").prop('checked', false);
+            $("#answers4 input:radio:checked").prop('checked', false);
+            $("#answers5 input:radio:checked").prop('checked', false);
+        });
+    });
+</script>
