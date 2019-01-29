@@ -158,20 +158,26 @@
 
         surveyAnswers.memberQuiz = quizAnswers;
 
-        $.post("/api/friends", surveyAnswers, (data) => {
+        $.get("/api/friends", (data) => {
             if (data) {
-                alert("Congratulations! You've been added into our system!");
+                surveyComp(surveyAnswers, data);
             };
 
-            $("#memberName").val("");
-            $("#memberAge").val("");
-            $("#memberLocation").val("");
-            $("#memberPicture").val("");
-            $("#answers1 input:radio:checked").prop('checked', false);
-            $("#answers2 input:radio:checked").prop('checked', false);
-            $("#answers3 input:radio:checked").prop('checked', false);
-            $("#answers4 input:radio:checked").prop('checked', false);
-            $("#answers5 input:radio:checked").prop('checked', false);
+            $.post("/api/friends", surveyAnswers, (data) => {
+                if (data) {
+                    alert("Congratulations! You've been added into our system!");
+                };
+
+                $("#memberName").val("");
+                $("#memberAge").val("");
+                $("#memberLocation").val("");
+                $("#memberPicture").val("");
+                $("#answers1 input:radio:checked").prop('checked', false);
+                $("#answers2 input:radio:checked").prop('checked', false);
+                $("#answers3 input:radio:checked").prop('checked', false);
+                $("#answers4 input:radio:checked").prop('checked', false);
+                $("#answers5 input:radio:checked").prop('checked', false);
+            });
         });
     });
 </script>
