@@ -20,5 +20,11 @@ surveyComp = (surveyData, serverData) => {
 
     // Log the closest match based on who has the smallest difference
     var matchIndex = indexArr.indexOf(Math.min(...indexArr));
+
+    $("#friendImg").attr("src", serverData[matchIndex].memberPicture);
+    $("#friendList").append(`<li class="list-group-item"><b>Name:</b> ${serverData[matchIndex].memberName}</li>`);
+    $("#friendList").append(`<li class="list-group-item"><b>Age:</b> ${serverData[matchIndex].memberAge}</li>`);
+    $("#friendList").append(`<li class="list-group-item"><b>Location:</b> ${serverData[matchIndex].memberLocation}</li>`);
+
     console.log(serverData[matchIndex].memberName);
 };
