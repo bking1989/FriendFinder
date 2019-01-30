@@ -126,6 +126,20 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade" id="surveyModal" tabindex="1" role="dialog" aria-labelledby="surveyModal" aria-hidden="true">
+            <div class="modal-dialog modal-lg" role="document" style="top: 5em;">
+                <div class="modal-content">
+                    <div class="modal-header border-bottom-0">
+                        <h3 class="modal-title" id="surveyModalTitle">Survey Results</h3>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body"></div>
+                    <div class="modal-footer border-top-0"></div>
+                </div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
@@ -135,6 +149,7 @@
     $("#survey-btn").on("click", function(e) {
         e.preventDefault();
 
+        // Create a data set from all of the survey fields
         var surveyAnswers = {
             memberName: $("#memberName").val().trim(),
             memberAge: $("#memberAge").val(),
@@ -158,26 +173,36 @@
 
         surveyAnswers.memberQuiz = quizAnswers;
 
-        $.get("/api/friends", (data) => {
-            if (data) {
-                surveyComp(surveyAnswers, data);
-            };
-
-            $.post("/api/friends", surveyAnswers, (data) => {
+        if (surveyAnswers.memberName == "" || surveyAnswers.memberAge == "" | surveyAnswers.memberLocation == "" ||surveyAnswers.memberPicture == "" || question1 == null || question2 == null || question3 == null || question4 == null || question5 == null) {
+            alert('One of the fields was left empty or one of the questions was unanswered.\n\nPlease check, and try again!');
+            return;
+        } else {
+            // GET function for accessing, then comparing, the data
+            $.get("/api/friends", (data) => {
                 if (data) {
-                    alert("Congratulations! You've been added into our system!");
+                    surveyComp(surveyAnswers, data);
                 };
 
-                $("#memberName").val("");
-                $("#memberAge").val("");
-                $("#memberLocation").val("");
-                $("#memberPicture").val("");
-                $("#answers1 input:radio:checked").prop('checked', false);
-                $("#answers2 input:radio:checked").prop('checked', false);
-                $("#answers3 input:radio:checked").prop('checked', false);
-                $("#answers4 input:radio:checked").prop('checked', false);
-                $("#answers5 input:radio:checked").prop('checked', false);
+                $("#surveyModal").modal('show');
+
+                // POST function for submitting survey data to the server
+                $.post("/api/friends", surveyAnswers, (data) => {
+                    if (data) {
+                        console.log("Data successfully submitted!")
+                    };
+
+                    // Clear the survey fields
+                    $("#memberName").val("");
+                    $("#memberAge").val("");
+                    $("#memberLocation").val("");
+                    $("#memberPicture").val("");
+                    $("#answers1 input:radio:checked").prop('checked', false);
+                    $("#answers2 input:radio:checked").prop('checked', false);
+                    $("#answers3 input:radio:checked").prop('checked', false);
+                    $("#answers4 input:radio:checked").prop('checked', false);
+                    $("#answers5 input:radio:checked").prop('checked', false);
+                });
             });
-        });
+        };
     });
 </script>
