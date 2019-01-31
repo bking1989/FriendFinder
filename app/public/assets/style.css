@@ -1,0 +1,54 @@
+/* Home / Splash Page CSS */
+
+div#full-width-splash{
+    -moz-box-shadow: inset 0 -18px 20px -18px rgba(0,0,0,0.5);
+    -webkit-box-shadow: inset 0 -18px 20px -18px rgba(0,0,0,0.5);
+    background-image: url(splashImage.jpg);
+    background-position: center;
+    background-size: cover;
+    box-shadow: inset 0 -18px 20px -18px rgba(0,0,0,0.5);
+    position: relative;
+    text-align: center;
+    z-index: 1;
+}
+
+div#full-width-splash:after{
+    content: "";
+    background: rgba(0,0,0,0.5);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 2;
+}
+
+div#full-width-splash h1{
+    color: white;
+    font-size: 84px;
+    line-height: 1;
+    padding: 3em 0 0 0;
+    position: relative;
+    text-align: center;
+    text-shadow: black 3px 3px 0px;
+    z-index: 3;
+}
+
+div#full-width-splash h2{
+    color: white;
+    font-size: 24px;
+    line-height: 1.3;
+    position: relative;
+    text-align: center;
+    text-shadow: black 2px 2px 0px;
+    z-index: 3;
+}
+
+div#full-width-splash button#homeBtn{
+    -moz-box-shadow: rgba(0,0,0,0.5) 0 0 10px;
+    -webkit-box-shadow: rgba(0,0,0,0.5) 0 0 10px;
+    box-shadow: rgba(0,0,0,0.5) 0 0 20px 0;
+    margin: 0 0 3em 0;
+    position: relative;
+    z-index: 3;
+}
