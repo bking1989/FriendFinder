@@ -22,6 +22,7 @@ surveyComp = (surveyData, serverData) => {
     var matchIndex = indexArr.indexOf(Math.min(...indexArr));
 
     $("#friendImg").attr("src", serverData[matchIndex].memberPicture);
+    $("#friendList").empty();
     $("#friendList").append(`<li class="list-group-item"><b>Name:</b> ${serverData[matchIndex].memberName}</li>`);
     $("#friendList").append(`<li class="list-group-item"><b>Age:</b> ${serverData[matchIndex].memberAge}</li>`);
     $("#friendList").append(`<li class="list-group-item"><b>Location:</b> ${serverData[matchIndex].memberLocation}</li>`);
